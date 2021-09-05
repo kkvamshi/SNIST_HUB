@@ -1,0 +1,140 @@
+body{
+	background-color:white;
+}
+#full{
+width:100%;
+float:left;
+background-color:white;
+position:relative;
+overflow:auto;
+margin-bottom:46px;
+}
+#ghead{
+width:100%;
+float:left;
+background-color:white;
+border:1px solid ridge;
+position:relative;
+}
+a{
+	text-decoration:none;
+}
+.greq{
+width:100%;
+float:left;
+background-color:white;
+position:relative;
+font-size:18px;
+border-bottom:1px solid black;
+font-family: 'David Libre', serif;
+min-height:60px;
+}
+.greq:hover{
+	background-color:#f1f1f1;
+}
+.grmsg{
+	text-align:center;
+width:calc( 100% - 20px );
+float:left;
+font-size:18px;
+padding:10px;
+font-family: 'David Libre', serif;
+color:black;
+}
+.ncomment{
+font-size:16px;
+	color:#a1a1a1;
+    white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.grmsg b{
+	font-size:20px;
+	color:#44447d;
+}
+.grmsg i{
+	font-size:20px;
+	color:#44447d;
+}
+.ar{
+width:100%;
+float:left;
+}
+.reject{
+position:relative;
+float:left;
+display:block;
+margin:10px;
+font-family: 'David Libre', serif;
+}
+.accept{
+position:relative;
+margin:10px;
+float:right;
+display:block;
+font-family: 'David Libre', serif;
+}
+.membox{
+	float:left;
+	display:block;
+	width:100%;
+	height:60px;
+	overflow:hidden;
+}
+div.mdl-js-ripple-effect{
+	overflow:hidden;
+	position:relative;
+}
+.membox:hover{
+ background-color:#f1f1f1;
+}
+.memimg{
+	float:left;
+	display:block;
+	width:60px;
+	height:100%;
+}
+.memimg img{
+	float:left;
+	display:block;
+	width:50px;
+	height:50px;
+	margin:5px;
+	border-radius:25px;
+}
+.memnm{
+	float:left;
+	display:block;
+	width:calc( 100% - 60px );
+	height:100%;
+	color:black;
+}
+.memname{
+	float:left;
+	display:block;
+	width:calc( 100% - 15px );
+	height:25px;
+	margin:5px;
+	margin-left:10px;
+	font-size:24px;
+	opacity:1;
+font-family: 'David Libre', serif;
+}
+.memmsg{
+font-family: 'David Libre', serif;
+	width:( 100% - 15px );
+	height:18px;
+	margin:5px;
+	margin-top:0;
+	font-size:18px;
+	margin-left:10px;
+	opacity:0.6;
+	float:left;
+	display:block;
+}
+
+
+
+
+

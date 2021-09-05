@@ -1,0 +1,102 @@
+
+<!-- saved from url=(0034)http://localhost/SnistHub/home.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Butcherman" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="./SnistHub_files/home.css">
+<script type="text/javascript" src="./SnistHub_files/jquery-3.2.1.js.download"></script><script>
+
+$("#head").hide();
+$("#mainn").hide();
+$("#loader-icon").show();
+$(document).ready(function(){
+$(".hlinks").click(function(){
+if($(window).width()<=500){
+	  if($("#leftt").width()==0)
+		   $("#leftt").width("100%");
+	   else
+		   $("#leftt").width("0%");
+}
+});
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+
+	$("#loader-icon").delay(1000).fadeOut("slow");
+$("#head").delay(1000).show();
+$("#mainn").delay(1000).show();
+    $("#iframe").click();
+	$("#menuu").on('click',function(){
+	     	if(document.getElementById("leftt").style.width == "0%" ){
+    document.getElementById("leftt").style.width = "100%";
+	}
+	else{
+		document.getElementById("leftt").style.width="0%";
+	}
+	});
+	$(window).resize(function(){
+		if($(window).width()>500){
+		if($(window).width()>900)
+			$("#leftt").width("20%");
+		else
+			$("#leftt").width("30%");
+		}
+		else
+			$("#leftt").width("0%");
+	});
+});
+
+</script></head>
+
+
+<body>
+
+<link rel="icon" href="http://localhost/SnistHub/logo1.png&#39;%3E%3Clink%20href=&#39;https://fonts.googleapis.com/css?family=Butcherman%27%20rel=%27stylesheet%27%3E%3Cmeta%20name=" viewport"="" content="width=device-width, initial-scale=1">
+<title>SnistHub</title>
+	
+<div id="loader-icon" style="z-index: 999; position: absolute; text-align: center; width: 100%; height: 100%; background-color: rgb(255, 255, 255); padding-top: 100px; display: none;"><img src="./SnistHub_files/LoaderIcon1.gif"></div>
+	<div id="head">
+	
+<span id="menuu" style="font-size:30px;cursor:pointer">☰</span><img src="./SnistHub_files/logo13.png" id="loggg1"></div>
+	<div id="mainn">
+	<div id="leftt">
+	<div id="left-content">
+	<img id="propic" height="120" width="120" style="background-image:url(&#39;profiles/15311a05p6/pro.jpg&#39;);">
+	 <form action="http://localhost/SnistHub/photo.php" enctype="multipart/form-data" target="iframe_u" method="post"><input type="file" accept="image/*" onchange="this.form.submit()" value="Upload image" name="pro"></form><br>
+	<a class="hlinks" style="font-size:22px;" href="http://localhost/SnistHub/home.php">sankeerth</a><hr>
+	<a class="hlinks" target="iframe_me" href="http://localhost/SnistHub/general.php">General</a><br>
+	<a class="hlinks" target="iframe_me" href="http://localhost/SnistHub/queries.php">Queries</a><br>
+	<a href="http://localhost/SnistHub/home.php" target="iframe_me" class="hlinks">Clubs</a><br>
+	<a class="hlinks" target="iframe_me" href="http://localhost/SnistHub/home.php">Academics</a><br><hr>
+	<a class="hlinks" href="http://localhost/SnistHub/logout.php">Logout</a><br>
+	</div></div>
+	<div id="mid">
+	<iframe src="./SnistHub_files/general.html" id="iframe" name="iframe_me"></iframe>
+	</div>
+	<div id="rightt">
+	<div id="slideshow">
+   
+   
+   
+<div style="">
+     <img src="./SnistHub_files/arts.jpg">
+   </div><div style="display: none;">
+     <img src="./SnistHub_files/scf.jpg">
+   </div><div style="display: none;">
+     <img src="./SnistHub_files/rob.jpg">
+   </div></div>
+	</div>
+	</div>
+	
+	<iframe src="./SnistHub_files/saved_resource.html" id="iiframe" name="iframe_u"></iframe>
+
+
+</body></html>

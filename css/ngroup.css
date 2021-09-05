@@ -1,0 +1,38 @@
+#top{
+	position:relative;
+	height:15%;
+	left:0;
+	right:0;
+	display:block;
+	background-color:#ffffff;
+	border-bottom:2px solid black;
+}
+h2{
+	font-size:3em;
+	color:black;
+}
+#main{
+	position:relative;
+	height:79%;
+	left:0;
+	right:0;
+	display:block;
+	background-color:#d1d3f4;
+}
+table{
+	width:100%;
+	padding-top:100px;
+}
+tr{
+	height:50px;
+	font-size:32px;
+}
+td{
+	width:auto;
+	padding:9px;
+}
+input{
+	width:100%;
+	height:32px;
+	border-radius:4px;
+}

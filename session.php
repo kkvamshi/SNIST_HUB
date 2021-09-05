@@ -1,0 +1,36 @@
+<?php
+session_start();
+if(isset($_SESSION['ID']))
+{
+ $id=$_SESSION['ID'];
+ $nn=$_SESSION['nn'];
+ $gender=$_SESSION['g'];
+ $branch=$_SESSION['branch'];
+ $year=$_SESSION['year'];
+ if(!($year>0&&$year<5))
+	 $year=0;
+ $url=$_SESSION['url'];
+ if($id!='admin')
+ $user=$_SESSION['user'];
+else
+	$user='admin';
+ $b=0;
+ if($branch=='bt')
+	 $b=5;
+ if($branch=='civil')
+	 $b=6;
+ if($branch=='cse')
+	 $b=7;
+ if($branch=='ece')
+	 $b=8;
+ if($branch=='eee')
+	 $b=9;
+ if($branch=='ecm')
+	 $b=10;  
+ if($branch=='it')
+	 $b=11;
+ if($branch=='mech')
+	 $b=12;
+}
+  
+?>
